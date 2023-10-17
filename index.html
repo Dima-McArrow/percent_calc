@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percent calculator</title>
+    <link rel="shortcut icon" href="./media/percent-5-svgrepo-com.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.css">
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+    <div class="appWrapper">
+      <div class="container d-flex justify-content-center">
+        <h1 class="display-3 mt-5">Percent calculator by DM</h1>
+      </div>
+      <div class="container">
+        <form class="my_form" id="my_form">
+          <div class="mb-3 mt-5">
+            <label for="userNum" class="form-label">Enter a number</label>
+            <input type="number" class="form-control" id="unerNum" name="userNumber" aria-describedby="numHelp">
+            <div id="numHelp" class="form-text">The calculaton will be based on that number</div>
+          </div>
+          <select class="form-select form-select-sm mb-3" name="userOp" aria-label="Small select example">
+            <option selected>Select the operation</option>
+            <option value="1">Add (+)</option>
+            <option value="2">Substract (-)</option>
+          </select>
+          <div class="input-group mb-3">
+            <input type="number" placeholder="Enter percent" name="userPer" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">%</span>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-primary">Calculate</button>
+          </div>
+        </form>
+      </div>
+      <div class="container mt-5">
+        <div class="card text-center">
+          <div class="card-header">
+            X +/- y% = 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">result</h5>
+            <p class="card-text">***</p>
+          </div>
+          <div class="card-footer text-body-secondary">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 d-flex justify-content-center">
+      <p class="closing_message">Made with HTML, Bootstrap and JavaScript</p>
+    </div>
+  </body>
+</html>
