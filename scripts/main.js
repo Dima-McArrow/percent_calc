@@ -16,6 +16,7 @@ const getData = () => {
     let result = percCalc(userNumber, userOp, userPer)
     showTitle(userNumber, userOp, userPer)
     showRes(result)
+    resBut()
   })
 }
 
@@ -41,6 +42,13 @@ const percCalc = (number, oper, perc) => {
 const showRes = (res) => {
   const container = document.querySelector(".card-title")
   container.textContent = res
+}
+
+const resBut = () => {
+  const resButton = document.getElementById('reset')
+  resButton.addEventListener('click', () => {
+    window.location.reload()
+  })
 }
 
 getData()
